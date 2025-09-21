@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Web moderna</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#">NelsonDev</a>
+            <nav id="mainNav" class="nav" role="navigation">
+                <a href="#features">Características</a>
+                <a href="#pricing">Precios</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+
+            <!-- botón hamburguesa (visible en móvil) -->
+            <button id="menuToggle" class="menu-toggle" aria-controls="mainNav" aria-expanded="false"
+                aria-label="Abrir menú">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+
+            <div class="actions">
+                <button id="themeToggle" aria-label="Alternar tema">🌙</button>
+                <a class="btn primary" href="#contact">Comenzar</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div>
+                    <h1>Diseño moderno, rápido y accesible</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestias</p>
+                    <div class="hero-cta">
+                        <a class="btn primary" href="#features">Ver características</a>
+                        <a class="btn ghost" href="#pricing">Planes</a>
+                    </div>
+                </div>
+                <div class="hero-illustration" aria-hidden="true">
+                    <!-- ilustración simple SVG -->
+                    <svg width="320" height="220" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="20" width="300" height="180" rx="12" fill="var(--muted)" />
+                        <circle cx="80" cy="90" r="28" fill="var(--accent)" />
+                        <rect x="130" y="60" width="140" height="24" rx="6" fill="var(--surface)" />
+                        <rect x="130" y="100" width="90" height="18" rx="4" fill="var(--surface)" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="container features">
+            <h2>Características</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Rápido</h3>
+                    <p>Optimizada para rendimiento y buenas prácticas.</p>
+                </article>
+                <article class="card">
+                    <h3>Responsive</h3>
+                    <p>Se adapta a móvil, tablet y escritorio sin esfuerzo.</p>
+                </article>
+                <article class="card">
+                    <h3>Accesible</h3>
+                    <p>Contrastes y navegación por teclado considerados.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="pricing" class="container pricing">
+            <h2>Planes</h2>
+            <div class="grid">
+                <div class="plan card">
+                    <h3>Gratis</h3>
+                    <p class="price">0€/mes</p>
+                    <ul>
+                        <li>Proyecto personal</li>
+                        <li>Soporte comunidad</li>
+                    </ul>
+                </div>
+                <div class="plan card">
+                    <h3>Pro</h3>
+                    <p class="price">9€/mes</p>
+                    <ul>
+                        <li>Característica avanzada</li>
+                        <li>Soporte prioritario</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <section class="info-panel container" aria-labelledby="info-title">
+                <div class="info-card">
+                    <div class="info-media" aria-hidden="true">
+                        <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="dev-icon">
+                            <rect x="2" y="2" width="80" height="80" rx="16" fill="url(#g)" />
+                            <defs>
+                                <linearGradient id="g" x1="0" x2="1">
+                                    <stop offset="0" stop-color="#7c3aed" />
+                                    <stop offset="1" stop-color="#06b6d4" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="info-body">
+                        <h1 id="info-title" class="dev">Más Información</h1>
+
+                
+                        <div class="info-box" aria-labelledby="info-title">
+                          <p class="dev-text">Diseño web responsive, interfaces limpias y optimizadas para rendimiento. Creo
+                          experiencias accesibles y modernas usando HTML, CSS y JavaScript. Trabajo en UI, prototipos y
+                          despliegue.</p>
+                        </div>
+
+                        <ul class="dev-features" aria-hidden="false">
+                            <li>Diseño responsive</li>
+                            <li>Optimización de rendimiento</li>
+                            <li>Accesibilidad y SEO básico</li>
+                        </ul>
+
+                        <div class="dev-ctas">
+                            <a class="btn primary" href="#contact">Contáctame</a>
+                            <a class="btn ghost" href="#features">Ver trabajos</a>
+                        </div>
+
+                        <!-- Recuadros informativos rectangulares, responsivos y modernos -->
+                        <div class="info-tiles" aria-label="Información adicional">
+                          <article class="tile">
+                            <h4 class="tile-title">Servicio 1</h4>
+                            <p class="tile-body">Descripción breve y clara del servicio 1. Texto conciso y directo para captar atención.</p>
+                          </article>
+                          <article class="tile">
+                            <h4 class="tile-title">Servicio 2</h4>
+                            <p class="tile-body">Beneficios principales, características y por qué elegir.</p>
+                          </article>
+                          <article class="tile">
+                            <h4 class="tile-title">Servicio 3</h4>
+                            <p class="tile-body">Resumen corto, ejemplo de uso o llamada a la acción secundaria.</p>
+                          </article>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+       
+        <section id="contact" class="container contact">
+            <h2>Contacto</h2>
+            <form id="contactForm" class="form">
+                <div class="form-row">
+                    <input name="name" id="name" placeholder="Nombre" required />
+                    <input name="email" id="email" type="email" placeholder="Correo" required />
+                </div>
+
+                <textarea name="message" id="message" rows="5" placeholder="Mensaje" required></textarea>
+                <div class="form-actions">
+                    <button class="btn primary" type="submit">Enviar</button>
+                </div>
+                <p id="formStatus" class="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 MiWeb — todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>
